@@ -24,8 +24,28 @@ img { max-width: 100%; height: auto; }
 }
 
 .role {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   font-size: 1.15rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 0;
+  align-items: center;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.links svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
 }
 
 .about { padding-top: 28px; }
@@ -55,9 +75,16 @@ h1 {
 
 .intro p { margin: 0; }
 
-main { padding-bottom: 72px; }
+body > main {
+  width: min(1080px, calc(100% - 40px));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 32px;
+  align-items: start;
+  padding: 48px 0 72px;
+}
 
-article { margin-top: 56px; }
+main article { margin-top: 0; }
 
 h2 {
   margin: 0;
@@ -75,6 +102,10 @@ article p {
 }
 
 article p:last-child { margin-bottom: 0; }
+
+@media (max-width: 760px) {
+  body > main { grid-template-columns: 1fr; gap: 40px; }
+}
 
 @media (max-width: 560px) {
   .intro {
