@@ -19,8 +19,22 @@ img { max-width: 100%; height: auto; }
 .intro {
   display: flex;
   gap: 28px;
-  align-items: flex-end;
-  padding: 48px 0 12px;
+  align-items: center;
+  padding: 48px 0 8px;
+}
+
+.role {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.about { padding-top: 28px; }
+
+.about p { margin: 0; }
+
+.edu {
+  margin-top: 14px;
+  color: #3a3a3a;
 }
 
 .portrait {
