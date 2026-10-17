@@ -52,10 +52,20 @@ img { max-width: 100%; height: auto; }
 
 .about p { margin: 0; }
 
-.about .edu {
-  margin-top: 1.45em;
+.about .edu { margin-top: 1.45em; }
+
+.edu h2 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.edu p {
+  margin: 0;
   color: #3a3a3a;
 }
+
+.edu p + p { margin-top: 4px; }
 
 .portrait {
   width: 168px;
