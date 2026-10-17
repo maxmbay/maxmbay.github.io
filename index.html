@@ -29,18 +29,11 @@
   </header>
 
   <section class="about">
-    <p>Senior data scientist and machine learning engineer who leads modeling work from problem framing to nightly production. A decade building probabilistic and generative models, first in neuroscience research and now in two major league front offices. Sets technical direction across a product portfolio, develops and onboards analysts, builds reliable production systems, and translates results into decisions with executive leadership.</p>
+    <p>Most of my work models the full range of what can happen, since the spread usually matters as much as the average: where a pitcher’s misses land, how unevenly cells in one dish respond to a drug, how many different kinds of viewers a film reaches. At the Dodgers I’m the main quantitative analyst on pitching, and I built the club’s batted-ball simulator and its first pitcher command model. Before that I did R&amp;D for the Houston Astros. Before baseball I spent about ten years in neuroscience at USC, finishing with a PhD on using single-cell data to find drugs that move diseased tissue back toward a healthy state.</p>
     <p class="edu">PhD, Neuroscience, University of Southern California, 2022. BSc, Psychology and Neuroscience, Syracuse University, 2011.</p>
   </section>
 
   <main>
-    <article>
-      <h2><a href="https://github.com/maxmbay/expression">expression</a></h2>
-      <img src="images/expression.png" alt="Three synthetic responses with the same mean. Three percent, nineteen percent, and six percent of the cells fall inside the goal.">
-      <p>The aim is to find which drug moves the largest share of a cancer cell line into a chosen state, such as stopping division while a general stress response stays off.</p>
-      <p>Cells in the same dish respond unevenly, so an average hides the result that matters. The project predicts the whole group of cells after treatment, using the untreated cells, the drug’s chemical structure, and the dose, and then counts how many land in that state. The three clouds above are a picture of this rule, not predictions from a trained model.</p>
-    </article>
-
     <article>
       <h2><a href="https://github.com/maxmbay/audience-predictor">audience predictor</a></h2>
       <img src="images/audience.png" alt="Coverage desk for the spec The Well: a recommend stamp, a scene-by-scene craft chart, and short notes on what the script is and whether it is good.">
@@ -53,6 +46,13 @@
       <img src="images/catalog.png" alt="Scatter of MovieLens popularity against marginal catalog value. High-popularity titles are not always high value.">
       <p>The aim is to estimate how much a film adds to a catalog by covering viewers that catalog does not already serve.</p>
       <p>People like different things, so a catalog’s value is how much of that spread it covers. The model learns those tastes and each title’s place among them, then measures how coverage changes if the title is added or removed. The result is a range for that coverage.</p>
+    </article>
+
+    <article>
+      <h2><a href="https://github.com/maxmbay/expression">cellresponse</a></h2>
+      <img src="images/expression.png" alt="Three synthetic responses with the same mean. Three percent, nineteen percent, and six percent of the cells fall inside the goal.">
+      <p>The aim is to find which drug moves the largest share of a cancer cell line into a chosen state, such as stopping division while a general stress response stays off.</p>
+      <p>Cells in the same dish respond unevenly, so an average hides the result that matters. The project predicts the whole group of cells after treatment, using the untreated cells, the drug’s chemical structure, and the dose, and then counts how many land in that state. The three clouds above are a picture of this rule, not predictions from a trained model.</p>
     </article>
 
     <article>
