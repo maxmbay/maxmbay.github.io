@@ -68,7 +68,7 @@ a { text-underline-offset: 3px; }
 .edu h2 {
   margin: 0 0 8px;
   font-size: 16.5px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .edu p {
@@ -101,7 +101,17 @@ body > main {
   column-gap: 40px;
   row-gap: 56px;
   align-items: start;
-  padding: 48px 0 72px;
+  margin-top: 48px;
+  padding: 28px 0 72px;
+  border-top: 1px solid #e4e1d8;
+}
+
+.projects-label {
+  grid-column: 1 / -1;
+  margin: 0 0 -28px;
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 main article { margin-top: 0; }
