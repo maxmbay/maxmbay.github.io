@@ -50,22 +50,22 @@
     <article>
       <h2><a href="https://github.com/maxmbay/audience-predictor">audience predictor</a></h2>
       <img src="images/audience.png" width="1540" height="1592" alt="Coverage desk for the spec The Well: a recommend stamp, a scene-by-scene craft chart, and short notes on what the script is and whether it is good.">
-      <p>The aim is to take a screenplay nobody has filmed yet and answer two questions: who the film is for, and whether the pages are any good.</p>
-      <p>Who it is for comes from placing the script near films that millions of people have already rated, which yields similar titles and a sense of whether audiences would split. Whether the pages are any good comes from reading the script scene by scene and returning a pass, consider, or recommend. Both answers use only the script, because cast, ads, reviews, and prizes do not exist yet.</p>
+      <p>Studios decide whether to develop a screenplay long before anyone sees the film. Most attempts to predict a film’s reception lean on information that only exists after release, such as cast, marketing, reviews, and awards. A model trained on those looks accurate and is useless on an unmade script.</p>
+      <p>This tool works from the script alone and answers two separate questions. For who the film is for, it embeds the text into a taste space learned from MovieLens ratings, which returns comparable films, the odds that audiences split into lovers and haters, and a posterior over critic and audience scores instead of a single number. For whether the pages are any good, a language model reads each scene and checks specific craft questions, such as whether the situation changes by the end and whether a character wants something, and those checks roll up to a pass, consider, or recommend.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/catalog-value">catalog value</a></h2>
       <img src="images/catalog.png" width="1936" height="1452" alt="Scatter of MovieLens popularity against marginal catalog value. High-popularity titles are not always high value.">
-      <p>The aim is to estimate how much a film adds to a catalog by covering viewers that catalog does not already serve.</p>
-      <p>People like different things, so a catalog’s value is how much of that spread it covers. The model learns those tastes and each title’s place among them, then measures how coverage changes if the title is added or removed. The result is a range for that coverage.</p>
+      <p>Streaming services often value titles by popularity, but a popular film adds little to a catalog that already serves the same viewers. What a title is worth depends on what else is in the catalog.</p>
+      <p>The model learns each viewer as a mix of tastes from MovieLens ratings and places every title in the same space. A catalog’s value is how well its titles cover those tastes, and a title’s value is the change in coverage when it is added or removed, reported as a distribution rather than a point estimate. I mapped the US catalogs of Netflix, Disney+, Prime Video, Max, and Hulu onto that space and used the estimates to build catalogs title by title. The figure shows that popularity and added value often disagree.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/expression">cellresponse</a></h2>
       <img src="images/expression.png" width="2000" height="1010" alt="Three synthetic responses with the same mean. Three percent, nineteen percent, and six percent of the cells fall inside the goal.">
-      <p>The aim is to find which drug moves the largest share of a cancer cell line into a chosen state, such as stopping division while a general stress response stays off.</p>
-      <p>Cells in the same dish respond unevenly, so an average hides the result that matters. The project predicts the whole group of cells after treatment, using the untreated cells, the drug’s chemical structure, and the dose, and then counts how many land in that state. The three clouds above are a picture of this rule, not predictions from a trained model.</p>
+      <p>Many cancer drugs are meant to push cells into one state, such as stopping division, without setting off the general stress response that almost any toxic compound triggers. Cells in the same dish respond unevenly, so a drug that moves every cell a little and a drug that moves a fifth of the cells all the way can have the same average effect. When the goal is a state, the number that matters is the share of cells that reach it.</p>
+      <p>This project ranks drugs by that share. Using single-cell RNA data from Tahoe-100M, a conditional normalizing flow predicts the full population of treated cells from a cell line’s untreated cells, the drug’s chemical structure, and the dose, then counts how many land in the target state. Rankings are locked before the held-out wells are opened. So far a simpler baseline still ranks best, and the flow has not cleared the bar I set for it. The three clouds above illustrate the problem; they are not model output.</p>
     </article>
 
     <article>
@@ -77,8 +77,7 @@
     <article>
       <h2><a href="https://github.com/maxmbay/phoenix-tracker">phoenix tracker</a></h2>
       <img src="images/phoenix.jpg" width="1200" height="760" alt="Voyage companion for Sailing With Phoenix: the track on a map, the hour’s weather, and the story log.">
-      <p>I’m a big fan of Oliver Widger, who is sailing the boat, and this is a fan site that tells his story.</p>
-      <p>The map, the weather charts, and the posts all follow one selected hour, so the story stays tied to where he was. Wind and wave height are reconstructed at the reported position and kept separate from anything he said. It is unofficial, and it is not affiliated with him, the voyage, or PredictWind.</p>
+      <p>I've been following Oliver Widger’s voyages on Phoenix since his journey to Hawaii. Now he's circumnavigating the globe. This fan site puts his videos, locations, and travel conditions in one place with full history. Selecting an hour moves the map, the posts, and the weather charts together. Wind, gusts, and wave height are reconstructed at his reported position and kept separate from anything he said. It is unofficial and not affiliated with him, the voyage, or PredictWind.</p>
     </article>
   </main>
 </body>
