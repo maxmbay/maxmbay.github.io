@@ -4,7 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maxwell Bay</title>
-  <meta name="description" content="Maxwell Bay, Senior Quantitative Analyst at the Los Angeles Dodgers.">
+  <meta name="description" content="Maxwell Bay is a Senior Quantitative Analyst at the Los Angeles Dodgers. He builds probabilistic and generative models.">
+  <link rel="canonical" href="https://maxmbay.github.io/">
+  <meta property="og:title" content="Maxwell Bay">
+  <meta property="og:description" content="Senior Quantitative Analyst at the Los Angeles Dodgers. Probabilistic and generative models, from neuroscience to two major-league front offices.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maxmbay.github.io/">
+  <meta property="og:image" content="https://maxmbay.github.io/photos/Maxwell-Bay-crop.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,22 +21,23 @@
     <img class="portrait" src="photos/Maxwell-Bay-crop.jpg" alt="Maxwell Bay">
     <div>
       <h1>Maxwell Bay</h1>
-      <p class="links">
-        <a href="https://github.com/maxmbay">
+      <nav class="links" aria-label="Contact">
+        <a href="https://github.com/maxmbay" rel="me noopener noreferrer">
           <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M6 2h4v1h-4zM4 3h8v1h-8zM3 4h10v1h-10zM2 5h2v1h-2zM5 5h6v1h-6zM12 5h2v1h-2zM2 6h2v1h-2zM12 6h2v1h-2zM1 7h2v1h-2zM13 7h2v1h-2zM1 8h2v1h-2zM13 8h2v1h-2zM1 9h2v1h-2zM13 9h2v1h-2zM1 10h3v1h-3zM12 10h3v1h-3zM2 11h3v1h-3zM11 11h3v1h-3zM2 12h1v1h-1zM11 12h3v1h-3zM3 13h2v1h-2zM11 13h2v1h-2z"/></svg>
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/mbayphd">
+        <a href="https://www.linkedin.com/in/mbayphd" rel="me noopener noreferrer">
           <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M1 0h14v1h-14zM0 1h16v1h-16zM0 2h16v1h-16zM0 3h2v1h-2zM6 3h10v1h-10zM0 4h2v1h-2zM6 4h10v1h-10zM0 5h2v1h-2zM6 5h10v1h-10zM0 6h16v1h-16zM0 7h2v1h-2zM6 7h2v1h-2zM14 7h2v1h-2zM0 8h2v1h-2zM6 8h2v1h-2zM10 8h2v1h-2zM14 8h2v1h-2zM0 9h2v1h-2zM6 9h2v1h-2zM10 9h2v1h-2zM14 9h2v1h-2zM0 10h2v1h-2zM6 10h2v1h-2zM10 10h2v1h-2zM14 10h2v1h-2zM0 11h2v1h-2zM6 11h2v1h-2zM10 11h2v1h-2zM14 11h2v1h-2zM0 12h2v1h-2zM6 12h2v1h-2zM10 12h2v1h-2zM14 12h2v1h-2zM0 13h16v1h-16zM0 14h16v1h-16zM1 15h14v1h-14z"/></svg>
           LinkedIn
         </a>
-        <a href="resume/Maxwell_Bay_Resume_2026.pdf" download>Resume</a>
-      </p>
+        <a href="resume/Maxwell_Bay_Resume_2026.pdf">Resume</a>
+      </nav>
     </div>
   </header>
 
   <section class="about">
-    <p>I’m a data scientist and ML engineer who leads modeling work from problem framing through nightly production. I’m currently a Senior Quantitative Analyst at the Los Angeles Dodgers. I’ve spent a decade building probabilistic and generative models, first in neuroscience research and then across two major league front offices. Between the two clubs, I spent most of 2024 as an AI engineer at PortfolioT, building LLM agents, knowledge graphs, and chat systems for startups. help people make discoveries and sound decisions. My wife and I have two wonderful kids. Outside of work, I love solving Rubik’s cubes, playing guitar, and playing chess. </p>
+    <p>I’m a data scientist and ML engineer who leads modeling work from problem framing through nightly production. I’m currently a Senior Quantitative Analyst at the Los Angeles Dodgers. I’ve spent a decade building probabilistic and generative models, first in neuroscience research and then across two major league front offices. Between the two clubs, I spent most of 2024 as an AI engineer at PortfolioT, building LLM agents, knowledge graphs, and chat systems for startups.</p>
+    <p>I’m most interested in work that helps people make discoveries and sound decisions. My wife and I have two wonderful kids. Outside of work, I love solving Rubik’s cubes, playing guitar, and playing chess.</p>
     <div class="edu">
       <h2>Education</h2>
       <p>PhD, Neuroscience, University of Southern California, 2022.</p>
@@ -39,34 +48,34 @@
   <main>
     <article>
       <h2><a href="https://github.com/maxmbay/audience-predictor">audience predictor</a></h2>
-      <img src="images/audience.png" alt="Coverage desk for the spec The Well: a recommend stamp, a scene-by-scene craft chart, and short notes on what the script is and whether it is good.">
+      <img src="images/audience.png" width="1540" height="1592" alt="Coverage desk for the spec The Well: a recommend stamp, a scene-by-scene craft chart, and short notes on what the script is and whether it is good.">
       <p>The aim is to take a screenplay nobody has filmed yet and answer two questions: who the film is for, and whether the pages are any good.</p>
       <p>Who it is for comes from placing the script near films that millions of people have already rated, which yields similar titles and a sense of whether audiences would split. Whether the pages are any good comes from reading the script scene by scene and returning a pass, consider, or recommend. Both answers use only the script, because cast, ads, reviews, and prizes do not exist yet.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/catalog-value">catalog value</a></h2>
-      <img src="images/catalog.png" alt="Scatter of MovieLens popularity against marginal catalog value. High-popularity titles are not always high value.">
+      <img src="images/catalog.png" width="1936" height="1452" alt="Scatter of MovieLens popularity against marginal catalog value. High-popularity titles are not always high value.">
       <p>The aim is to estimate how much a film adds to a catalog by covering viewers that catalog does not already serve.</p>
       <p>People like different things, so a catalog’s value is how much of that spread it covers. The model learns those tastes and each title’s place among them, then measures how coverage changes if the title is added or removed. The result is a range for that coverage.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/expression">cellresponse</a></h2>
-      <img src="images/expression.png" alt="Three synthetic responses with the same mean. Three percent, nineteen percent, and six percent of the cells fall inside the goal.">
+      <img src="images/expression.png" width="2000" height="1010" alt="Three synthetic responses with the same mean. Three percent, nineteen percent, and six percent of the cells fall inside the goal.">
       <p>The aim is to find which drug moves the largest share of a cancer cell line into a chosen state, such as stopping division while a general stress response stays off.</p>
       <p>Cells in the same dish respond unevenly, so an average hides the result that matters. The project predicts the whole group of cells after treatment, using the untreated cells, the drug’s chemical structure, and the dose, and then counts how many land in that state. The three clouds above are a picture of this rule, not predictions from a trained model.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/public_baseball">baseball projects</a></h2>
-      <img src="images/baseball.png" alt="Cristian Javier’s 2020 fastball plotted against the movement expected from his arm angle. The four-seam fastball sits above that expectation.">
+      <img src="images/baseball.png" width="1460" height="1837" alt="Cristian Javier’s 2020 fastball plotted against the movement expected from his arm angle. The four-seam fastball sits above that expectation.">
       <p>This contains a collection of code (in various forms) focused on baseball problems that interest me.</p>
     </article>
 
     <article>
       <h2><a href="https://github.com/maxmbay/phoenix-tracker">phoenix tracker</a></h2>
-      <img src="images/phoenix.jpg" alt="Voyage companion for Sailing With Phoenix: the track on a map, the hour’s weather, and the story log.">
+      <img src="images/phoenix.jpg" width="1200" height="760" alt="Voyage companion for Sailing With Phoenix: the track on a map, the hour’s weather, and the story log.">
       <p>I’m a big fan of Oliver Widger, who is sailing the boat, and this is a fan site that tells his story.</p>
       <p>The map, the weather charts, and the posts all follow one selected hour, so the story stays tied to where he was. Wind and wave height are reconstructed at the reported position and kept separate from anything he said. It is unofficial, and it is not affiliated with him, the voyage, or PredictWind.</p>
     </article>
