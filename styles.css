@@ -46,9 +46,10 @@ img { max-width: 100%; height: auto; }
 }
 
 .links svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   flex: none;
+  image-rendering: pixelated;
 }
 
 a { text-underline-offset: 3px; }
