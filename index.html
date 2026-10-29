@@ -77,9 +77,9 @@
 
     <article>
       <h2><a href="https://github.com/maxmbay/ashlar">ashlar</a></h2>
-      <img src="images/ashlar.png" width="2898" height="1449" alt="Average predictive density of Gaussian, histogram, and mixture heads on held-out 2013 New York flight delays, and the mixture head for three single flights.">
-      <p>If a table only needs one number per row, a gradient-boosted tree is hard to beat. A tree regressor predicts a mean. An interval takes another model per quantile, or a fixed-width normal around that mean, and neither is a density you can evaluate or sample.</p>
-      <p>Ashlar fits small JAX and Equinox models to tables and to series. You call fit and predict. Numeric columns are imputed and scaled, and string columns become learned vectors, with a defined vector for a category that never appeared in training. A regression or a forecast can return the whole distribution from one fit: a Gaussian, a mixture, a spline flow, a histogram, or a set of quantiles. On 2013 New York flights, from the schedule alone, the single bell is too wide at the peak and too thin in the tail, and the mixture’s shape changes from flight to flight.</p>
+      <img src="images/ashlar.svg" width="806" height="260" alt="Ashlar logo: isometric blocks of a two-mode density beside the word ashlar and the line distributional models for tabular data.">
+      <p>Ashlar is a neural-network drop-in replacement for gradient-boosted trees such as XGBoost, CatBoost, and LightGBM. It is built on JAX and Equinox.</p>
+      <p>It fits a table the way those models do, with the flexibility to model distributions of arbitrarily complex shape.</p>
     </article>
 
     <article>
