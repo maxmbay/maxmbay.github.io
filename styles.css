@@ -137,6 +137,19 @@ article p {
 
 article p:last-child { margin-bottom: 0; }
 
+/* 1 : φ, so the logo takes 1/φ² of the row and the text takes 1/φ. */
+article.ashlar {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1.618034fr;
+  column-gap: 40px;
+  align-items: start;
+}
+
+article.ashlar img { margin: 0; }
+
+article.ashlar h2 + p { margin-top: 14px; }
+
 @media (max-width: 1100px) {
   body > main {
     grid-template-columns: 1fr 1fr;
@@ -148,6 +161,11 @@ article p:last-child { margin-bottom: 0; }
   body > main {
     grid-template-columns: 1fr;
     row-gap: 40px;
+  }
+
+  article.ashlar {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
   }
 }
 
